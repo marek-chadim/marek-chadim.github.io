@@ -26,8 +26,9 @@ git push -u origin main
 
 - `index.html` — home: fields, blurb, news, contact + links
 - `research.html` — working papers (locally hosted PDFs), work in progress, code portfolio
+- `media.html` — press coverage (CES award, Lindau, Yale predoc conference, Econometric Game) + policy output of RA projects
 - `chadim_markups_procurement.pdf` / `chadim_markups_slides.pdf` — hosted paper + slides; add future paper PDFs alongside
-- `cv.pdf` — current CV (April 2026)
+- `cv.pdf` — current CV (July 2026)
 - `yale-blue.css` — stylesheet
 - `favicon.png` / `favicon.ico` — "MC" tab icon
 - `404.html` — custom not-found page
