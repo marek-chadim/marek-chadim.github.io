@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Graduate coursework of Marek Chadim - Ph.D. econometrics and empirical industrial organization at Yale and Stockholm University, with problem-set write-ups, notebooks and replication code">
+	<meta name="keywords" content="econometrics, industrial organization, BLP, Rust, dynamic games, machine learning, problem sets, notebooks, graduate coursework">
+	<meta name="author" content="Marek Chadim">
+	<meta property="og:title" content="Coursework - Marek Chadim">
+	<meta property="og:description" content="Ph.D. econometrics and empirical IO coursework: write-ups, notebooks and replication code.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://marek-chadim.github.io/coursework.html">
+	<meta property="og:image" content="https://marek-chadim.github.io/photo.jpg">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="canonical" href="https://marek-chadim.github.io/coursework.html">
+	<link rel="stylesheet" type="text/css" href="yale-blue.css" media="screen,projection">
+	<title>Coursework - Marek Chadim</title>
+</head>
+
+<body>
+<div id="wrap">
+	<h1>Marek Chadim</h1>
+    <p class="slogan">Graduate Coursework</p>
+
+<ul class="toptabs">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="research.html">Research</a></li>
+  <li><a class="active" href="coursework.html">Coursework</a></li>
+  <li><a href="cv.pdf">CV (.pdf)</a></li>
+  <li><a href="https://github.com/marek-chadim">Code</a></li>
+</ul>
+
+	<div id="maincontent">
+
+		<p>Doctoral coursework in econometrics and empirical industrial organization, taken at Yale
+		and at Stockholm University. Everything linked below is my own work &mdash; problem-set
+		write-ups, notebooks, and replication code. Lecture slides, syllabi, and official solutions
+		belong to the instructors and are not reproduced here.</p>
+
+		<h3>Yale University &mdash; Ph.D. coursework, 2025&ndash;27</h3>
+		<ul>
+		<li><strong>Empirical Industrial Organization (ECON 6600)</strong>, Fall 2025 &mdash;
+			Profs. Philip Haile and Charles Hodgson. <em>Honors.</em>
+			Three replication-grade implementations:
+			<a href="https://github.com/marek-chadim/empirical-io">[Repository]</a><br>
+			<em>Demand.</em> Random-coefficients logit with optimal instruments, diversion ratios and
+			merger counterfactuals, estimated with
+			<a href="https://github.com/jeffgortmaker/pyblp">pyBLP</a>
+			<a href="https://github.com/marek-chadim/empirical-io/blob/main/demand/blp.ipynb">[Notebook]</a>
+			<a href="https://github.com/marek-chadim/empirical-io/blob/main/demand/blp.py">[Code]</a>
+			<a href="https://github.com/marek-chadim/empirical-io/blob/main/demand/BLP_hw_chadim.pdf">[Write-up]</a><br>
+			<em>Single-agent dynamics.</em> Value-function iteration and structural estimation of the
+			optimal machine-replacement model, on Rust's original bus-engine data
+			<a href="https://github.com/marek-chadim/empirical-io/blob/main/dynamics/dp.ipynb">[Notebook]</a><br>
+			<em>Dynamic games.</em> Bajari&ndash;Benkard&ndash;Levin forward simulation with conditional
+			choice probabilities, recovering profit parameters from an entry/exit game
+			<a href="https://github.com/marek-chadim/empirical-io/blob/main/games/dg.py">[Code]</a>
+			<a href="https://github.com/marek-chadim/empirical-io/blob/main/games/BBL_hw_chadim.pdf">[Write-up]</a>
+		</li>
+
+		<li><strong>Econometrics of Dependent Data / Econometrics IV (ECON 5553)</strong>, Spring 2026 &mdash;
+			Prof. Timothy Christensen. <em>Honors.</em>
+			Four write-ups, 25 pp.: matching estimators and treatment effects; martingales, uniform
+			integrability and tail sigma-algebras; pre-testing and the uniformity of inference; the Wold
+			decomposition; stable convergence and Bartik instruments; limit theory for dyadic data and
+			under two-way dependence
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/ps1.pdf">[1]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/ps2.pdf">[2]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/ps3.pdf">[3]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/ps4.pdf">[4]</a><br>
+			Two longer course requirements:
+			the oral examination, a presentation of Andrews, Barahona, Gentzkow, Rambachan and Shapiro,
+			&ldquo;Causal Interpretation of Structural IV Estimands&rdquo; (<em>QJE</em> 140(3), 2025)
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/abgrs_presentation.pdf">[Presentation]</a>,
+			and a referee report written to <em>Econometrica</em> guidelines on Borusyak, Chen, Hull and Lei,
+			&ldquo;Nonparametric Identification of Demand without Exogenous Product Characteristics&rdquo;
+			(NBER WP 34842)
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/referee_report_bchl.pdf">[Referee report]</a>
+		</li>
+
+		<li><strong>Econometrics III (ECON 5552)</strong>, Fall 2025 &mdash; Prof. Yuichi Kitamura.
+			Audited, at full workload. Five write-ups, 31 pp.: parametric and nonparametric identification;
+			asymptotic theory for nonlinear models; limited-dependent-variable models; quantile
+			instrumental variables; Kolmogorov&ndash;Smirnov and related distributional tests; the
+			bootstrap and subsampling, applied to Survey of Consumer Finances data
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw1.pdf">[1]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw2.pdf">[2]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw3.pdf">[3]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw4.pdf">[4]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw5.pdf">[5]</a>
+		</li>
+
+		<li><strong>Industrial Organization II (ECON 6601)</strong>, Spring 2026 &mdash;
+			Profs. Steven Berry and Katja Seim. Audited; presented a research proposal on the dynamics of
+			market power in public procurement.</li>
+
+		<li><strong>Mathematics.</strong> Measure Theory and Integration (MATH 5200), Fall 2026.
+			Planned for Spring 2027: Functional Analysis and Econometrics V.</li>
+		</ul>
+
+		<h3>Stockholm University &mdash; Ph.D. coursework, 2024</h3>
+		<p>Taken concurrently with the M.S. at the Stockholm School of Economics; graded pass/fail and
+		excluded from the M.S. GPA.
+		<a href="https://github.com/marek-chadim/econometrics">[Repository]</a></p>
+		<ul>
+		<li><strong>Econometrics I (EC38002)</strong>, Spring 2024 &mdash; Profs. Mitchell Downey and
+			Markus J&auml;ntti. Six write-ups, 26 pp.: probability and statistics; least-squares algebra;
+			conditional expectations and the law of iterated expectations; asymptotic theory and inference;
+			variance estimation under general error structures; GMM and constrained minimum distance.
+			Taught from Bruce Hansen, <em>Probability and Statistics for Economists</em> and
+			<em>Econometrics</em>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/stockholm/econometrics-i/ps1.pdf">[1]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/stockholm/econometrics-i/ps2.pdf">[2]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/stockholm/econometrics-i/ps3.pdf">[3]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/stockholm/econometrics-i/ps4.pdf">[4]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/stockholm/econometrics-i/ps5.pdf">[5]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/stockholm/econometrics-i/ps6.pdf">[6]</a>
+		</li>
+
+		<li><strong>Econometrics II (EC38003)</strong>, Fall 2024 &mdash; Profs. Konrad Burchardi and
+			David Sch&ouml;nholzer. Five write-ups, 21 pp.: potential outcomes and identification of the
+			ATT; randomization inference and assignment probabilities; simulation and instrumental
+			variables; SUTVA under spillovers; difference-in-differences with staggered adoption. Taught
+			from Angrist and Pischke, <em>Mostly Harmless Econometrics</em>, and Imbens and Rubin
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/stockholm/econometrics-ii/ps1.pdf">[1]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/stockholm/econometrics-ii/ps2.pdf">[2]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/stockholm/econometrics-ii/ps3.pdf">[3]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/stockholm/econometrics-ii/ps4.pdf">[4]</a>
+			<a href="https://github.com/marek-chadim/econometrics/blob/main/stockholm/econometrics-ii/ps5.pdf">[5]</a>
+		</li>
+
+		<li><strong>Applied Empirical Economics I (EC38024)</strong>, Autumn 2024 &mdash;
+			Prof. David Str&ouml;mberg. Thirteen assignments in Stata, R and Python, each with a rendered
+			report: project workflow and version control; Stata programming; R; unsupervised learning;
+			model selection; Lasso for inference; regression trees; causal trees; text as data; spatial
+			data and GIS; Python; deep learning; web scraping. Taught from Hastie, Tibshirani and Friedman,
+			<em>The Elements of Statistical Learning</em>, and James et al., <em>An Introduction to
+			Statistical Learning</em>
+
+		</li>
+		</ul>
+
+		<h3>Short courses</h3>
+		<ul>
+		<li><strong>Econometrics (PHD401)</strong>, June 2025 &mdash; Prof. Magne Mogstad
+			(University of Chicago), TA Deniz Dutz; University of Stavanger Business School, attended
+			remotely. Potential outcomes and selection on observables; instrumental variables, monotonicity
+			and the LATE theorem; partial identification, marginal treatment effects and policy-relevant
+			parameters. Core reading:
+			<a href="https://a-torgovitsky.github.io/ivhandbook/">Mogstad and Torgovitsky</a>,
+			<em>Handbook of Labor Economics</em>, 2024.</li>
+		<li><strong>math+econ+code masterclasses</strong> &mdash; Prof. Alfred Galichon (NYU).
+			<em>Discrete Choice Models and Applications in Economics</em> (with Antoine Jacquet),
+			May 2026: random utility, demand inversion by convex duality, the entropy of choice, and
+			dynamic discrete choice. <em>Estimating Large-Scale Matching Models</em>, March 2026
+			<a href="https://github.com/math-econ-code/turin-2026">[Course materials]</a>.</li>
+		</ul>
+
+		<h3>Research code</h3>
+		<ul>
+		<li><strong>Markups and Public Procurement</strong> &mdash; markup estimation with the production
+			approach, selection-on-observables designs, synthetic control and matrix completion, in Stata
+			and R <a href="https://github.com/marek-chadim/thesis">[Repository]</a>
+			<a href="research.html">[Paper and slides]</a></li>
+		</ul>
+
+		<h3>Credit</h3>
+		<p>The idea of publishing graduate coursework as a structured, readable page comes from
+		<a href="https://matteocourthoud.github.io/">Matteo Courthoud</a>, whose
+		<a href="https://matteocourthoud.github.io/course/metrics/">PhD Econometrics</a> and
+		<a href="https://matteocourthoud.github.io/course/empirical-io/">Empirical IO</a> notes are a
+		model for how much of a doctoral education can be made public and useful. This page is narrower:
+		it collects my own solutions and implementations rather than a set of lecture notes.</p>
+
+    </div>
+	<p style="font-size: 0.85em; color: #888; text-align: center;">Last updated: August 2026 &middot; design adapted from <a href="https://chrisconlon.github.io/" style="color: #888;">Chris Conlon</a></p>
+</div>
+</body>
+</html>
