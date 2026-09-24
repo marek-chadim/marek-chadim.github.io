@@ -230,24 +230,40 @@ main {
   color: var(--yale);
 }
 
-/* —— Home hero —— */
+/* —— Home hero (typography + atmosphere; no portrait) —— */
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  position: relative;
+  display: flex;
+  align-items: center;
   min-height: calc(100vh - 3.4rem);
   width: 100%;
   margin: 0;
-  align-items: stretch;
+  overflow: hidden;
+}
+
+.hero--text::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 55% at 12% 35%, rgba(26, 90, 156, 0.22), transparent 60%),
+    radial-gradient(ellipse 55% 50% at 88% 20%, rgba(12, 21, 34, 0.14), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 70% 90%, rgba(40, 109, 192, 0.1), transparent 60%);
+  animation: fade 1.2s var(--ease) both;
 }
 
 .hero-copy {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 3.5rem clamp(1.5rem, 5vw, 4.5rem) 3.5rem clamp(1.5rem, 6vw, 5rem);
+  width: 100%;
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3.75rem clamp(1.5rem, 5vw, 4.5rem) 4rem;
   text-align: left;
-  max-width: 40rem;
-  margin-left: auto;
 }
 
 .hero-label {
@@ -263,20 +279,20 @@ main {
 .hero-brand {
   margin: 0 0 1.25rem;
   font-family: var(--font-display);
-  font-size: clamp(2.75rem, 6vw, 4.25rem);
+  font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 600;
   font-variation-settings: "SOFT" 30, "WONK" 0.4;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
   color: var(--ink);
   animation: rise 0.9s var(--ease) 0.06s both;
 }
 
 .hero-headline {
   margin: 0 0 1rem;
-  max-width: 22em;
+  max-width: 24em;
   font-family: var(--font-display);
-  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
   font-weight: 500;
   font-variation-settings: "SOFT" 50, "WONK" 0;
   line-height: 1.35;
@@ -285,18 +301,27 @@ main {
 }
 
 .hero-lede {
-  margin: 0 0 1.75rem;
+  margin: 0 0 1.25rem;
   max-width: 28em;
   font-size: 1.05rem;
   color: var(--text-muted);
   animation: rise 0.9s var(--ease) 0.2s both;
 }
 
+.hero-methods {
+  margin: 0 0 1.85rem;
+  max-width: 36em;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text);
+  animation: rise 0.9s var(--ease) 0.24s both;
+}
+
 .cta-row {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem 1rem;
-  animation: rise 0.9s var(--ease) 0.28s both;
+  animation: rise 0.9s var(--ease) 0.3s both;
 }
 
 .btn {
@@ -337,35 +362,6 @@ main {
   color: var(--yale);
   text-decoration: none;
   background: rgba(0, 53, 107, 0.04);
-}
-
-.hero-visual {
-  position: relative;
-  min-height: 22rem;
-  overflow: hidden;
-  animation: fade 1.1s var(--ease) 0.15s both;
-  /* Full-bleed to the right edge of the viewport */
-  margin: 0;
-}
-
-.hero-visual picture {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.hero-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* IMG_9690 podium crop: face near mid-frame after tight crop */
-  object-position: center 35%;
-  transform: scale(1.03);
-  transition: transform 10s var(--ease);
-}
-
-.hero:hover .hero-visual img {
-  transform: scale(1.07);
 }
 
 /* —— Interior page mast —— */
@@ -531,36 +527,24 @@ main {
     scroll-behavior: auto;
   }
 
-  .hero:hover .hero-visual img {
-    transform: none;
+  .hero--text::before {
+    animation: none;
   }
 }
 
 /* —— Responsive —— */
 @media screen and (max-width: 900px) {
   .hero {
-    grid-template-columns: 1fr;
-    min-height: auto;
+    min-height: calc(100vh - 3.4rem);
   }
 
   .hero-copy {
-    padding: 2rem 1.35rem 2.25rem;
-    order: 1;
+    padding: 2.5rem 1.35rem 2.75rem;
     max-width: none;
-    margin-left: 0;
-  }
-
-  .hero-visual {
-    order: 0;
-    min-height: min(58vw, 24rem);
-    max-height: 28rem;
-    /* Full-bleed photo band on mobile */
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
   }
 
   .hero-brand {
-    font-size: clamp(2.4rem, 10vw, 3.25rem);
+    font-size: clamp(2.6rem, 11vw, 3.5rem);
   }
 }
 
@@ -580,9 +564,12 @@ main {
     padding: 0 1.15rem 3rem;
   }
 
+  .hero {
+    min-height: auto;
+  }
+
   .hero-copy {
-    padding-left: 1.15rem;
-    padding-right: 1.15rem;
+    padding: 2rem 1.15rem 2.5rem;
   }
 
   .cta-row {
@@ -601,17 +588,16 @@ main {
   }
 
   .site-header,
-  .cta-row,
-  .hero-visual {
+  .cta-row {
     break-inside: avoid;
   }
 
   .hero {
     display: block;
+    min-height: auto;
   }
 
-  .hero-visual {
-    max-height: 12rem;
-    margin-bottom: 1rem;
+  .hero--text::before {
+    display: none;
   }
 }
