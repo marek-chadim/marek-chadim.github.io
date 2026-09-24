@@ -1,29 +1,26 @@
 # marek-chadim.github.io
 
-Personal academic website — three pages plus hosted PDFs. Design adapted from
-[chrisconlon/chrisconlon.github.io](https://github.com/chrisconlon/chrisconlon.github.io)
-(Daleri Single template by Andreas Viklund), recolored in Yale blue.
+Personal academic website for Marek Chadim (Predoctoral Fellow, Tobin Center, Yale).
 
-## Files
+## Pages
 
-- `index.html` — home: field statement, background, news, contact
-- `research.html` — working paper, research proposal, work in progress, code
-- `cv.pdf` — current CV (August 2026)
-- `chadim_markups_procurement.pdf`, `chadim_markups_slides.pdf` — hosted paper and slides
-- `chadim_writing_sample.pdf`, `chadim_writing_sample_short.pdf` — 66-page and 10-page writing samples
-- `chadim_proposal_strong_exclusion.pdf` — research proposal
-- `yale-blue.css` — stylesheet (all colors and fonts are CSS variables at the top)
-- `favicon.png`, `favicon.ico`, `photo.jpg`, `404.html`
+- `index.html` — brand-first home: field, background, news, contact
+- `research.html` — working paper, proposal, work in progress (code → `/thesis`)
+- `coursework.html` — Yale Ph.D. coursework write-ups and notebooks
+- `cv.pdf` — current CV (v5, September 2026)
+- `404.html` — not-found
+
+Hosted PDFs: paper, short writing sample, slides, proposal. Stylesheet: `site.css`.
+
+## Design
+
+Fraunces + Source Sans 3, mist/ink atmosphere, full-bleed portrait hero on home.
+No purple-on-white or cream-terracotta defaults; Yale blue as accent only.
 
 ## Maintain
 
-- **CV**: overwrite `cv.pdf` and push.
-- **New paper**: add an `<li>` in `research.html` under Working Papers.
-- Update the "Last updated" footer date at the bottom of `index.html` and `research.html`.
+- **CV**: overwrite `cv.pdf` from `phdapps/SUBMIT/MAREK_CHADIM_CV_v5.pdf` (or later) and push.
+- **Research**: edit `research.html`; never link `markups-procurement`.
+- Update the footer "Last updated" month when content changes.
 
-Pages deploys from `main`; changes are live within a minute or two.
-
-## To do
-
-Once the paper is on SSRN, create a Google Scholar profile and add both links to the
-Tobin / GitHub / LinkedIn row on the home page.
+Deploys from `main` via GitHub Pages.

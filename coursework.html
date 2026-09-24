@@ -13,96 +13,93 @@
 	<meta property="og:image" content="https://marek-chadim.github.io/photo.jpg">
 	<link rel="icon" type="image/png" href="favicon.png">
 	<link rel="canonical" href="https://marek-chadim.github.io/coursework.html">
-	<link rel="stylesheet" type="text/css" href="yale-blue.css" media="screen,projection">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;500;600;650&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="site.css" media="screen,projection">
 	<title>Coursework - Marek Chadim</title>
 </head>
-
 <body>
-<div id="wrap">
-	<h1>Marek Chadim</h1>
-    <p class="slogan">Ph.D. Coursework</p>
+<div class="site">
+	<header class="site-header">
+		<div class="site-header-inner">
+			<a class="wordmark" href="index.html">Marek Chadim</a>
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a class="active" href="coursework.html">Coursework</a></li>
+				<li><a href="cv.pdf">CV</a></li>
+				<li><a href="https://github.com/marek-chadim">Code</a></li>
+			</ul>
+		</div>
+	</header>
 
-<ul class="toptabs">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="research.html">Research</a></li>
-  <li><a class="active" href="coursework.html">Coursework</a></li>
-  <li><a href="cv.pdf">CV (.pdf)</a></li>
-  <li><a href="https://github.com/marek-chadim">Code</a></li>
-</ul>
+	<main class="page">
+		<header class="mast">
+			<h1>Coursework</h1>
+			<p>Ph.D. courses at Yale as a visiting student, with write-ups and code.</p>
+		</header>
 
-	<div id="maincontent">
+		<div class="content-wide prose">
+			<p>The write-ups, notebooks and code linked below are my own; where a solution restates the problem it answers, that problem is the instructor&rsquo;s. Lecture slides, syllabi and official solutions are not hosted here. If you spot anything that should not be, please let me know.</p>
 
-		<p>Ph.D. courses I have taken at Yale as a visiting student, with the write-ups and code I produced for them. The
-		write-ups, notebooks and code linked below are my own; where a solution restates the problem
-		it answers, that problem is the instructor's. Lecture slides, syllabi and official solutions
-		are not hosted here. If you spot anything that should not be, please
-		let me know.</p>
+			<h2>Yale University, 2025&ndash;26</h2>
 
-		<h3>Yale University, 2025&ndash;26</h3>
-		<ul>
-		<li><strong>Empirical Industrial Organization (ECON 6600)</strong>, Fall 2025.
-			Profs. Philip Haile and Charles Hodgson. <em>Honors.</em>
-			Three implementations:
-			<a href="https://github.com/marek-chadim/empirical-io">[Repository]</a><br>
-			<em>Demand.</em> Random-coefficients logit with optimal instruments, diversion ratios and
-			merger counterfactuals, estimated with
-			<a href="https://github.com/jeffgortmaker/pyblp">pyBLP</a>
-			<a href="https://github.com/marek-chadim/empirical-io/blob/main/demand/blp.ipynb">[Notebook]</a>
-			<a href="https://github.com/marek-chadim/empirical-io/blob/main/demand/blp.py">[Code]</a>
-			<a href="https://github.com/marek-chadim/empirical-io/blob/main/demand/BLP_hw_chadim.pdf">[Write-up]</a><br>
-			<em>Single-agent dynamics.</em> Value-function iteration and structural estimation of the
-			optimal machine-replacement model, on Rust's original bus-engine data
-			<a href="https://github.com/marek-chadim/empirical-io/blob/main/dynamics/dp.ipynb">[Notebook]</a><br>
-			<em>Dynamic games.</em> Bajari&ndash;Benkard&ndash;Levin forward simulation with conditional
-			choice probabilities, recovering profit parameters from an entry/exit game
-			<a href="https://github.com/marek-chadim/empirical-io/blob/main/games/dg.py">[Code]</a>
-			<a href="https://github.com/marek-chadim/empirical-io/blob/main/games/BBL_hw_chadim.pdf">[Write-up]</a>
-		</li>
+			<div class="course">
+				<div class="course-title">Empirical Industrial Organization (ECON 6600)</div>
+				<div class="meta">Fall 2025 &middot; Profs. Philip Haile and Charles Hodgson &middot; Honors
+					<a href="https://github.com/marek-chadim/empirical-io">[Repository]</a></div>
+				<p class="course-detail"><em class="label">Demand.</em> Random-coefficients logit with optimal instruments, diversion ratios and merger counterfactuals, estimated with
+					<a href="https://github.com/jeffgortmaker/pyblp">pyBLP</a>
+					<a href="https://github.com/marek-chadim/empirical-io/blob/main/demand/blp.ipynb">[Notebook]</a>
+					<a href="https://github.com/marek-chadim/empirical-io/blob/main/demand/blp.py">[Code]</a>
+					<a href="https://github.com/marek-chadim/empirical-io/blob/main/demand/BLP_hw_chadim.pdf">[Write-up]</a></p>
+				<p class="course-detail"><em class="label">Single-agent dynamics.</em> Value-function iteration and structural estimation of the optimal machine-replacement model, on Rust&rsquo;s original bus-engine data
+					<a href="https://github.com/marek-chadim/empirical-io/blob/main/dynamics/dp.ipynb">[Notebook]</a></p>
+				<p class="course-detail"><em class="label">Dynamic games.</em> Bajari&ndash;Benkard&ndash;Levin forward simulation with conditional choice probabilities, recovering profit parameters from an entry/exit game
+					<a href="https://github.com/marek-chadim/empirical-io/blob/main/games/dg.py">[Code]</a>
+					<a href="https://github.com/marek-chadim/empirical-io/blob/main/games/BBL_hw_chadim.pdf">[Write-up]</a></p>
+			</div>
 
-		<li><strong>Econometrics of Dependent Data / Econometrics IV (ECON 5553)</strong>, Spring 2026.
-			Prof. Timothy Christensen. <em>Honors.</em>
-			Four write-ups: matching estimators and treatment effects; martingales, uniform
-			integrability and tail sigma-algebras; pre-testing and the uniformity of inference; the Wold
-			decomposition; stable convergence and Bartik instruments; limit theory for dyadic data and
-			under two-way dependence
-			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/ps1.pdf">[1]</a>
-			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/ps2.pdf">[2]</a>
-			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/ps3.pdf">[3]</a>
-			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/ps4.pdf">[4]</a><br>
-			Two longer course requirements:
-			the oral examination, a presentation of Andrews, Barahona, Gentzkow, Rambachan and Shapiro,
-			&ldquo;Causal Interpretation of Structural IV Estimands&rdquo; (<em>QJE</em> 140(3), 2025)
-			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/abgrs_presentation.pdf">[Presentation]</a>,
-			and a referee report written to <em>Econometrica</em> guidelines on Borusyak, Chen, Hull and Lei,
-			&ldquo;Nonparametric Identification of Demand without Exogenous Product Characteristics&rdquo;
-			(NBER WP 34842)
-			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/referee_report_bchl.pdf">[Referee report]</a>
-		</li>
+			<div class="course">
+				<div class="course-title">Econometrics of Dependent Data / Econometrics IV (ECON 5553)</div>
+				<div class="meta">Spring 2026 &middot; Prof. Timothy Christensen &middot; Honors</div>
+				<p class="course-detail">Four write-ups: matching estimators and treatment effects; martingales, uniform integrability and tail sigma-algebras; pre-testing and the uniformity of inference; the Wold decomposition; stable convergence and Bartik instruments; limit theory for dyadic data and under two-way dependence
+					<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/ps1.pdf">[1]</a>
+					<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/ps2.pdf">[2]</a>
+					<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/ps3.pdf">[3]</a>
+					<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/ps4.pdf">[4]</a></p>
+				<p class="course-detail">Two longer course requirements: the oral examination, a presentation of Andrews, Barahona, Gentzkow, Rambachan and Shapiro, &ldquo;Causal Interpretation of Structural IV Estimands&rdquo; (<em>QJE</em> 140(3), 2025)
+					<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/abgrs_presentation.pdf">[Presentation]</a>,
+					and a referee report written to <em>Econometrica</em> guidelines on Borusyak, Chen, Hull and Lei, &ldquo;Nonparametric Identification of Demand without Exogenous Product Characteristics&rdquo; (NBER WP 34842)
+					<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iv/referee_report_bchl.pdf">[Referee report]</a></p>
+			</div>
 
-		<li><strong>Econometrics III (ECON 5552)</strong>, Fall 2025. Prof. Yuichi Kitamura.
-			Audited, at full workload. Five write-ups: parametric and nonparametric identification;
-			asymptotic theory for nonlinear models; limited-dependent-variable models; quantile
-			instrumental variables; Kolmogorov&ndash;Smirnov and related distributional tests; the
-			bootstrap and subsampling, applied to Survey of Consumer Finances data
-			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw1.pdf">[1]</a>
-			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw2.pdf">[2]</a>
-			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw3.pdf">[3]</a>
-			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw4.pdf">[4]</a>
-			<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw5.pdf">[5]</a>
-		</li>
+			<div class="course">
+				<div class="course-title">Econometrics III (ECON 5552)</div>
+				<div class="meta">Fall 2025 &middot; Prof. Yuichi Kitamura &middot; Audited, at full workload</div>
+				<p class="course-detail">Five write-ups: parametric and nonparametric identification; asymptotic theory for nonlinear models; limited-dependent-variable models; quantile instrumental variables; Kolmogorov&ndash;Smirnov and related distributional tests; the bootstrap and subsampling, applied to Survey of Consumer Finances data
+					<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw1.pdf">[1]</a>
+					<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw2.pdf">[2]</a>
+					<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw3.pdf">[3]</a>
+					<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw4.pdf">[4]</a>
+					<a href="https://github.com/marek-chadim/econometrics/blob/main/yale/econometrics-iii/hw5.pdf">[5]</a></p>
+			</div>
 
-		</ul>
+			<div class="credit">
+				<p>The idea of publishing graduate coursework as a structured, readable page comes from
+				<a href="https://matteocourthoud.github.io/">Matteo Courthoud</a>, whose
+				<a href="https://matteocourthoud.github.io/course/metrics/">PhD Econometrics</a> and
+				<a href="https://matteocourthoud.github.io/course/empirical-io/">Empirical IO</a> notes are a
+				model for how much of a doctoral education can be made public and useful. This page is narrower:
+				it collects my own solutions and implementations rather than a set of lecture notes.</p>
+			</div>
+		</div>
+	</main>
 
-		<h3>Credit</h3>
-		<p>The idea of publishing graduate coursework as a structured, readable page comes from
-		<a href="https://matteocourthoud.github.io/">Matteo Courthoud</a>, whose
-		<a href="https://matteocourthoud.github.io/course/metrics/">PhD Econometrics</a> and
-		<a href="https://matteocourthoud.github.io/course/empirical-io/">Empirical IO</a> notes are a
-		model for how much of a doctoral education can be made public and useful. This page is narrower:
-		it collects my own solutions and implementations rather than a set of lecture notes.</p>
-
-    </div>
-	<p style="font-size: 0.85em; color: #888; text-align: center;">Last updated: August 2026 &middot; design adapted from <a href="https://chrisconlon.github.io/" style="color: #888;">Chris Conlon</a></p>
+	<footer class="footer">
+		Last updated: September 2026
+	</footer>
 </div>
 </body>
 </html>
