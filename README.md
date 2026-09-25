@@ -14,7 +14,7 @@ Hosted PDFs: paper, short writing sample, slides, proposal. Stylesheet: `site.cs
 
 ## Design
 
-Fraunces + Source Sans 3, mist/ink atmosphere, full-bleed portrait hero on home.
+Fraunces + Source Sans 3, mist/ink atmosphere, text-only hero on home.
 No purple-on-white or cream-terracotta defaults; Yale blue as accent only.
 
 ## Maintain
