@@ -16,6 +16,7 @@ Hosted PDFs: paper, short writing sample, slides, proposal. Stylesheet: `site.cs
 
 Fraunces + Source Sans 3, mist/ink atmosphere, text-only hero on home.
 No purple-on-white or cream-terracotta defaults; Yale blue as accent only.
+Fonts are self-hosted under the SIL Open Font License: `fonts/OFL-Fraunces.txt` and `fonts/OFL-SourceSans3.txt`.
 
 ## Maintain
 
