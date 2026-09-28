@@ -5,12 +5,12 @@ Personal academic website for Marek Chadim (Predoctoral Fellow, Tobin Center, Ya
 ## Pages
 
 - `index.html`: third-person bio with inline links, contact row under the name, news in prose
-- `research.html`: field statement, working paper, proposal, replication work (code: `/thesis`)
+- `research.html`: field statement, working paper, replication work (code: `/thesis`)
 - `coursework.html`: Yale Ph.D. coursework write-ups and notebooks
 - `cv.pdf`: current CV (v7, September 2026)
 - `404.html`: not-found
 
-Hosted PDFs: paper, short writing sample, slides, proposal. Stylesheet: `site.css`.
+Hosted PDFs: paper, short writing sample, slides. Stylesheet: `site.css`.
 
 ## Design
 
