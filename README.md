@@ -5,7 +5,7 @@ Personal academic website for Marek Chadim (Predoctoral Fellow, Tobin Center, Ya
 ## Pages
 
 - `index.html`: third-person bio with inline links, contact row under the name, news in prose
-- `research.html`: field statement, working paper, replication work (code: `/thesis`)
+- `research.html`: the paper and its replication code (`/thesis`)
 - `coursework.html`: Yale Ph.D. coursework write-ups and notebooks
 - `cv.pdf`: current CV (v13, September 2026)
 - `404.html`: not-found
