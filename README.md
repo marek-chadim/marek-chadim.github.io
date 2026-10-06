@@ -7,7 +7,8 @@ Personal academic website for Marek Chadim (Predoctoral Fellow, Tobin Center, Ya
 - `index.html`: third-person bio with inline links, contact row under the name, news in prose
 - `research.html`: the paper and its replication code (`/thesis`)
 - `coursework.html`: Yale Ph.D. coursework write-ups and notebooks
-- `cv.pdf`: current CV (v13, September 2026)
+- `cv.pdf`: current CV (v24, October 2026)
+- `chadim_teaching_evaluations_BE603.pdf`: SSE teacher report for BE603 Data Analytics III (the report may be distributed as the teacher sees fit), linked from the CV
 - `404.html`: not-found
 
 Hosted PDFs: paper, short writing sample, slides. Stylesheet: `site.css`.
@@ -20,7 +21,7 @@ Fonts are self-hosted under the SIL Open Font License: `fonts/OFL-Fraunces.txt` 
 
 ## Maintain
 
-- **CV**: overwrite `cv.pdf` from `phdapps/SUBMIT/MAREK_CHADIM_CV_v7.pdf` (or later) and push.
+- **CV**: overwrite `cv.pdf` from the highest `phdapps/SUBMIT/MAREK_CHADIM_CV_v*.pdf` and push.
 - **Research**: edit `research.html`; never link `markups-procurement`.
 - Update the footer "Last updated" month when content changes.
 
