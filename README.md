@@ -7,7 +7,7 @@ Personal academic website for Marek Chadim (Predoctoral Fellow, Tobin Center, Ya
 - `index.html`: third-person bio with inline links, contact row under the name, news in prose
 - `research.html`: the paper and its replication code (`/thesis`)
 - `coursework.html`: Yale Ph.D. coursework write-ups and notebooks
-- `cv.pdf`: current CV (v36, October 2026)
+- `cv.pdf`: current CV (v37, October 2026)
 - `chadim_presidents_list_award.pdf`: SSE President's List Award certificate (1 February 2026), linked from the CV
 - `chadim_teaching_evaluations_BE603.pdf`: SSE teacher report for BE603 Data Analytics III (the report may be distributed as the teacher sees fit), linked from the CV
 - `404.html`: not-found
