@@ -12,7 +12,7 @@ Personal academic website for Marek Chadim (Predoctoral Fellow, Tobin Center, Ya
 - `chadim_teaching_evaluations_BE603.pdf`: SSE teacher report for BE603 Data Analytics III (the report may be distributed as the teacher sees fit), linked from the CV
 - `404.html`: not-found
 
-Hosted PDFs: paper, short writing sample, slides. Stylesheet: `site.css`.
+Hosted PDFs: CV, paper (academic cover), full and short writing samples, slides, the President's List certificate and the BE603 teaching evaluations. Stylesheet: `site.css`.
 
 ## Design
 
